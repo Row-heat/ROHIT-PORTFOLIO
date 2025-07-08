@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Preloader from './components/Preloader';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -13,7 +12,7 @@ import Footer from './components/Footer';
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     // Disable scroll during loading
@@ -28,21 +27,8 @@ function App() {
     };
   }, [isLoading]);
 
-  const handleLoadingComplete = () => {
-    setIsLoading(false);
-    
-    // Animate main content fade in
-    gsap.fromTo('.main-content',
-      { opacity: 0 },
-      { opacity: 1, duration: 1, ease: 'power2.out' }
-    );
-  };
-
   return (
     <div className="relative">
-      {/* Preloader */}
-      {isLoading && <Preloader onComplete={handleLoadingComplete} />}
-
       {/* Main Content */}
       <div 
         className="main-content"
