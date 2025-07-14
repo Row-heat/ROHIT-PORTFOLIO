@@ -23,7 +23,7 @@ const Projects = () => {
       id: 2,
       title: 'Animated Website',
       description: 'A modern, interactive website featuring smooth animations, dynamic transitions, and engaging user interactions built with cutting-edge web technologies.',
-      image: '/images/projects/5ad18c16-3c91-4bbf-96ec-e258bd99a114.jpeg',
+      image: '/images/projects/img2.jpeg',
       tech: ['HTML5', 'CSS3', 'JavaScript', 'GSAP'],
       github: 'https://github.com/Row-heat/ANIMATED-WEBSITE',
       live: 'https://animatedwebsite-wheat.vercel.app'
