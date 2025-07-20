@@ -76,7 +76,7 @@ const Hero = () => {
 
   const handleDownloadCV = () => {
     // Open Google Drive link in new tab for CV download
-    window.open('https://drive.google.com/file/d/1tsWBTSiZs1HZZK3UOmlJMPDhnhyOxskQ/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1M16c_cDBeSiNImFumlZ1xfXtqCcqRlFI/view?usp=sharing', '_blank');
   };
 
   return (
